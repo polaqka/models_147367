@@ -1,0 +1,122 @@
+[2026-08-04 09:54:13,269][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:365][void steps::solver::API::setPatchCount(const std::string&, const std::string&, double)]: The 'setPatchCount' method is deprecated and will be removed in STEPS 6, use 'setPatchSpecCount' instead. 
+
+[2026-08-04 09:54:13,269][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:290][void steps::solver::API::setCompConc(const std::string&, const std::string&, double)]: The 'setCompConc' method is deprecated and will be removed in STEPS 6, use 'setCompSpecConc' instead. 
+
+[2026-08-04 09:54:13,269][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:453][void steps::solver::API::setCompClamped(const std::string&, const std::string&, bool)]: The 'setCompClamped' method is deprecated and will be removed in STEPS 6, use 'setCompSpecClamped' instead. 
+
+[2026-08-04 09:54:13,269][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:355][double steps::solver::API::getPatchCount(const std::string&, const std::string&) const]: The 'getPatchCount' method is deprecated and will be removed in STEPS 6, use 'getPatchSpecCount' instead. 
+
+[2026-08-04 10:00:01,459][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:290][void steps::solver::API::setCompConc(const std::string&, const std::string&, double)]: The 'setCompConc' method is deprecated and will be removed in STEPS 6, use 'setCompSpecConc' instead. 
+
+[2026-08-04 10:00:01,459][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:453][void steps::solver::API::setCompClamped(const std::string&, const std::string&, bool)]: The 'setCompClamped' method is deprecated and will be removed in STEPS 6, use 'setCompSpecClamped' instead. 
+
+[2026-08-04 10:00:01,459][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:355][double steps::solver::API::getPatchCount(const std::string&, const std::string&) const]: The 'getPatchCount' method is deprecated and will be removed in STEPS 6, use 'getPatchSpecCount' instead. 
+
+[2026-08-04 10:02:16,916][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:290][void steps::solver::API::setCompConc(const std::string&, const std::string&, double)]: The 'setCompConc' method is deprecated and will be removed in STEPS 6, use 'setCompSpecConc' instead. 
+
+[2026-08-04 10:02:16,916][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:453][void steps::solver::API::setCompClamped(const std::string&, const std::string&, bool)]: The 'setCompClamped' method is deprecated and will be removed in STEPS 6, use 'setCompSpecClamped' instead. 
+
+[2026-08-04 10:02:16,916][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:355][double steps::solver::API::getPatchCount(const std::string&, const std::string&) const]: The 'getPatchCount' method is deprecated and will be removed in STEPS 6, use 'getPatchSpecCount' instead. 
+
+[2026-08-04 10:03:00,795][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:290][void steps::solver::API::setCompConc(const std::string&, const std::string&, double)]: The 'setCompConc' method is deprecated and will be removed in STEPS 6, use 'setCompSpecConc' instead. 
+
+[2026-08-04 10:03:00,795][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:453][void steps::solver::API::setCompClamped(const std::string&, const std::string&, bool)]: The 'setCompClamped' method is deprecated and will be removed in STEPS 6, use 'setCompSpecClamped' instead. 
+
+[2026-08-04 10:03:00,795][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:355][double steps::solver::API::getPatchCount(const std::string&, const std::string&) const]: The 'getPatchCount' method is deprecated and will be removed in STEPS 6, use 'getPatchSpecCount' instead. 
+
+[2026-08-04 10:13:02,863][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:290][void steps::solver::API::setCompConc(const std::string&, const std::string&, double)]: The 'setCompConc' method is deprecated and will be removed in STEPS 6, use 'setCompSpecConc' instead. 
+
+[2026-08-04 10:13:02,863][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:453][void steps::solver::API::setCompClamped(const std::string&, const std::string&, bool)]: The 'setCompClamped' method is deprecated and will be removed in STEPS 6, use 'setCompSpecClamped' instead. 
+
+[2026-08-04 10:13:02,863][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:355][double steps::solver::API::getPatchCount(const std::string&, const std::string&) const]: The 'getPatchCount' method is deprecated and will be removed in STEPS 6, use 'getPatchSpecCount' instead. 
+
+[2026-08-04 11:23:45,369][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:290][void steps::solver::API::setCompConc(const std::string&, const std::string&, double)]: The 'setCompConc' method is deprecated and will be removed in STEPS 6, use 'setCompSpecConc' instead. 
+
+[2026-08-04 11:23:45,370][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:453][void steps::solver::API::setCompClamped(const std::string&, const std::string&, bool)]: The 'setCompClamped' method is deprecated and will be removed in STEPS 6, use 'setCompSpecClamped' instead. 
+
+[2026-08-04 11:23:45,370][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:355][double steps::solver::API::getPatchCount(const std::string&, const std::string&) const]: The 'getPatchCount' method is deprecated and will be removed in STEPS 6, use 'getPatchSpecCount' instead. 
+
+[2026-08-04 11:24:46,388][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:290][void steps::solver::API::setCompConc(const std::string&, const std::string&, double)]: The 'setCompConc' method is deprecated and will be removed in STEPS 6, use 'setCompSpecConc' instead. 
+
+[2026-08-04 11:24:46,389][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:453][void steps::solver::API::setCompClamped(const std::string&, const std::string&, bool)]: The 'setCompClamped' method is deprecated and will be removed in STEPS 6, use 'setCompSpecClamped' instead. 
+
+[2026-08-04 11:24:46,389][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:355][double steps::solver::API::getPatchCount(const std::string&, const std::string&) const]: The 'getPatchCount' method is deprecated and will be removed in STEPS 6, use 'getPatchSpecCount' instead. 
+
+[2026-08-04 11:25:11,873][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:290][void steps::solver::API::setCompConc(const std::string&, const std::string&, double)]: The 'setCompConc' method is deprecated and will be removed in STEPS 6, use 'setCompSpecConc' instead. 
+
+[2026-08-04 11:25:11,873][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:453][void steps::solver::API::setCompClamped(const std::string&, const std::string&, bool)]: The 'setCompClamped' method is deprecated and will be removed in STEPS 6, use 'setCompSpecClamped' instead. 
+
+[2026-08-04 11:25:11,873][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:355][double steps::solver::API::getPatchCount(const std::string&, const std::string&) const]: The 'getPatchCount' method is deprecated and will be removed in STEPS 6, use 'getPatchSpecCount' instead. 
+
+[2026-08-04 11:25:23,245][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:290][void steps::solver::API::setCompConc(const std::string&, const std::string&, double)]: The 'setCompConc' method is deprecated and will be removed in STEPS 6, use 'setCompSpecConc' instead. 
+
+[2026-08-04 11:25:23,245][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:453][void steps::solver::API::setCompClamped(const std::string&, const std::string&, bool)]: The 'setCompClamped' method is deprecated and will be removed in STEPS 6, use 'setCompSpecClamped' instead. 
+
+[2026-08-04 11:25:23,245][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:355][double steps::solver::API::getPatchCount(const std::string&, const std::string&) const]: The 'getPatchCount' method is deprecated and will be removed in STEPS 6, use 'getPatchSpecCount' instead. 
+
+[2026-08-04 11:25:42,779][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:290][void steps::solver::API::setCompConc(const std::string&, const std::string&, double)]: The 'setCompConc' method is deprecated and will be removed in STEPS 6, use 'setCompSpecConc' instead. 
+
+[2026-08-04 11:25:42,779][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:453][void steps::solver::API::setCompClamped(const std::string&, const std::string&, bool)]: The 'setCompClamped' method is deprecated and will be removed in STEPS 6, use 'setCompSpecClamped' instead. 
+
+[2026-08-04 11:25:42,779][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:355][double steps::solver::API::getPatchCount(const std::string&, const std::string&) const]: The 'getPatchCount' method is deprecated and will be removed in STEPS 6, use 'getPatchSpecCount' instead. 
+
+[2026-08-04 11:36:57,303][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:365][void steps::solver::API::setPatchCount(const std::string&, const std::string&, double)]: The 'setPatchCount' method is deprecated and will be removed in STEPS 6, use 'setPatchSpecCount' instead. 
+
+[2026-08-04 11:36:57,304][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:290][void steps::solver::API::setCompConc(const std::string&, const std::string&, double)]: The 'setCompConc' method is deprecated and will be removed in STEPS 6, use 'setCompSpecConc' instead. 
+
+[2026-08-04 11:36:57,304][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:453][void steps::solver::API::setCompClamped(const std::string&, const std::string&, bool)]: The 'setCompClamped' method is deprecated and will be removed in STEPS 6, use 'setCompSpecClamped' instead. 
+
+[2026-08-04 11:36:57,304][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:355][double steps::solver::API::getPatchCount(const std::string&, const std::string&) const]: The 'getPatchCount' method is deprecated and will be removed in STEPS 6, use 'getPatchSpecCount' instead. 
+
+[2026-08-04 11:37:11,541][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:365][void steps::solver::API::setPatchCount(const std::string&, const std::string&, double)]: The 'setPatchCount' method is deprecated and will be removed in STEPS 6, use 'setPatchSpecCount' instead. 
+
+[2026-08-04 11:37:11,542][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:290][void steps::solver::API::setCompConc(const std::string&, const std::string&, double)]: The 'setCompConc' method is deprecated and will be removed in STEPS 6, use 'setCompSpecConc' instead. 
+
+[2026-08-04 11:37:11,542][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:453][void steps::solver::API::setCompClamped(const std::string&, const std::string&, bool)]: The 'setCompClamped' method is deprecated and will be removed in STEPS 6, use 'setCompSpecClamped' instead. 
+
+[2026-08-04 11:37:11,542][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:355][double steps::solver::API::getPatchCount(const std::string&, const std::string&) const]: The 'getPatchCount' method is deprecated and will be removed in STEPS 6, use 'getPatchSpecCount' instead. 
+
+[2026-08-04 11:37:25,577][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:365][void steps::solver::API::setPatchCount(const std::string&, const std::string&, double)]: The 'setPatchCount' method is deprecated and will be removed in STEPS 6, use 'setPatchSpecCount' instead. 
+
+[2026-08-04 11:37:25,579][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:290][void steps::solver::API::setCompConc(const std::string&, const std::string&, double)]: The 'setCompConc' method is deprecated and will be removed in STEPS 6, use 'setCompSpecConc' instead. 
+
+[2026-08-04 11:37:25,579][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:453][void steps::solver::API::setCompClamped(const std::string&, const std::string&, bool)]: The 'setCompClamped' method is deprecated and will be removed in STEPS 6, use 'setCompSpecClamped' instead. 
+
+[2026-08-04 11:37:25,579][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:355][double steps::solver::API::getPatchCount(const std::string&, const std::string&) const]: The 'getPatchCount' method is deprecated and will be removed in STEPS 6, use 'getPatchSpecCount' instead. 
+
+[2026-08-04 11:38:32,359][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:365][void steps::solver::API::setPatchCount(const std::string&, const std::string&, double)]: The 'setPatchCount' method is deprecated and will be removed in STEPS 6, use 'setPatchSpecCount' instead. 
+
+[2026-08-04 11:38:32,359][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:290][void steps::solver::API::setCompConc(const std::string&, const std::string&, double)]: The 'setCompConc' method is deprecated and will be removed in STEPS 6, use 'setCompSpecConc' instead. 
+
+[2026-08-04 11:38:32,359][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:453][void steps::solver::API::setCompClamped(const std::string&, const std::string&, bool)]: The 'setCompClamped' method is deprecated and will be removed in STEPS 6, use 'setCompSpecClamped' instead. 
+
+[2026-08-04 11:38:32,359][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:355][double steps::solver::API::getPatchCount(const std::string&, const std::string&) const]: The 'getPatchCount' method is deprecated and will be removed in STEPS 6, use 'getPatchSpecCount' instead. 
+
+[2026-08-04 11:39:02,933][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:365][void steps::solver::API::setPatchCount(const std::string&, const std::string&, double)]: The 'setPatchCount' method is deprecated and will be removed in STEPS 6, use 'setPatchSpecCount' instead. 
+
+[2026-08-04 11:39:02,933][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:290][void steps::solver::API::setCompConc(const std::string&, const std::string&, double)]: The 'setCompConc' method is deprecated and will be removed in STEPS 6, use 'setCompSpecConc' instead. 
+
+[2026-08-04 11:39:02,933][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:453][void steps::solver::API::setCompClamped(const std::string&, const std::string&, bool)]: The 'setCompClamped' method is deprecated and will be removed in STEPS 6, use 'setCompSpecClamped' instead. 
+
+[2026-08-04 11:39:02,933][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:355][double steps::solver::API::getPatchCount(const std::string&, const std::string&) const]: The 'getPatchCount' method is deprecated and will be removed in STEPS 6, use 'getPatchSpecCount' instead. 
+
+[2026-08-04 11:39:54,696][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:355][double steps::solver::API::getPatchCount(const std::string&, const std::string&) const]: The 'getPatchCount' method is deprecated and will be removed in STEPS 6, use 'getPatchSpecCount' instead. 
+
+[2026-08-04 11:40:39,506][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:365][void steps::solver::API::setPatchCount(const std::string&, const std::string&, double)]: The 'setPatchCount' method is deprecated and will be removed in STEPS 6, use 'setPatchSpecCount' instead. 
+
+[2026-08-04 11:40:39,506][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:290][void steps::solver::API::setCompConc(const std::string&, const std::string&, double)]: The 'setCompConc' method is deprecated and will be removed in STEPS 6, use 'setCompSpecConc' instead. 
+
+[2026-08-04 11:40:39,506][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:453][void steps::solver::API::setCompClamped(const std::string&, const std::string&, bool)]: The 'setCompClamped' method is deprecated and will be removed in STEPS 6, use 'setCompSpecClamped' instead. 
+
+[2026-08-04 11:40:39,506][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:355][double steps::solver::API::getPatchCount(const std::string&, const std::string&) const]: The 'getPatchCount' method is deprecated and will be removed in STEPS 6, use 'getPatchSpecCount' instead. 
+
+[2026-08-04 11:41:58,008][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:355][double steps::solver::API::getPatchCount(const std::string&, const std::string&) const]: The 'getPatchCount' method is deprecated and will be removed in STEPS 6, use 'getPatchSpecCount' instead. 
+
+[2026-08-04 11:48:00,240][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:365][void steps::solver::API::setPatchCount(const std::string&, const std::string&, double)]: The 'setPatchCount' method is deprecated and will be removed in STEPS 6, use 'setPatchSpecCount' instead. 
+
+[2026-08-04 11:48:00,241][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:290][void steps::solver::API::setCompConc(const std::string&, const std::string&, double)]: The 'setCompConc' method is deprecated and will be removed in STEPS 6, use 'setCompSpecConc' instead. 
+
+[2026-08-04 11:48:00,241][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:453][void steps::solver::API::setCompClamped(const std::string&, const std::string&, bool)]: The 'setCompClamped' method is deprecated and will be removed in STEPS 6, use 'setCompSpecClamped' instead. 
+
+[2026-08-04 11:48:00,241][WARNING][..p/pip-install-5q0yjji5/steps_bc8a22f9ec9a4bb883e8549c14dc6d6c/src/steps/solver/api_deprecated.cpp:355][double steps::solver::API::getPatchCount(const std::string&, const std::string&) const]: The 'getPatchCount' method is deprecated and will be removed in STEPS 6, use 'getPatchSpecCount' instead. 
+
