@@ -27,47 +27,46 @@ r.initialize(2605)
 sim = ssolver.Wmdirect(model.mdl, model.cell, r)
 
 # Number of iterations (defines how many times the model is simulated)
-NITER = 750
+NITER = 1  # 750
 
 tpnt = numpy.arange(0.0, 30.01, 0.01)
 
 # array for simulation results
 res = numpy.zeros([ca_concs.size, tpnt.size])
 
-print 'Simulating the IP3R model of Fraiman and Dawson 2004.'
+print('Simulating the IP3R model of Fraiman and Dawson 2004.')
 
-for i in xrange(ca_concs.size):
+for i in range(ca_concs.size):
 
-	print 'Round', i+1, '/', ca_concs.size
+	print('Round', i+1, '/', ca_concs.size)
 	temp_res = numpy.zeros([NITER, tpnt.size]) # temporary storage for results
 
-	for j in xrange(NITER): 
+	for j in range(NITER): 
 		sim.reset()
-        	sim.setPatchCount('ER_memb', 'A00', 1) # number of naive receptor
-        	sim.setCompConc('cyt', 'IP3', 10e-6) # [IP3] = 10 uM
-        	sim.setCompClamped('cyt', 'IP3', 1)
-        	sim.setCompConc('cyt', 'Ca', ca_concs[i])
-        	sim.setCompClamped('cyt', 'Ca', 1)
-        	sim.setCompConc('ER_lumen', 'Ca', 150e-6) 
-        	sim.setCompClamped('cyt', 'Ca', 1)
-
-    
-        	for t in xrange(tpnt.size):
-            		sim.run(tpnt[t])
-            		o1 = sim.getPatchCount('ER_memb', 'Oa')
-            		o2 = sim.getPatchCount('ER_memb', 'Ob')
-            		o3 = sim.getPatchCount('ER_memb', 'Oc')  
-            		temp_res[j,t] = o1 + o2 + o3 
+		sim.setPatchSpecCount('ER_memb', 'A00', 1) # number of naive receptor
+		sim.setCompSpecConc('cyt', 'IP3', 10e-6) # [IP3] = 10 uM
+		sim.setCompSpecClamped('cyt', 'IP3', 1)
+		sim.setCompSpecConc('cyt', 'Ca', ca_concs[i])
+		sim.setCompSpecClamped('cyt', 'Ca', 1)
+		sim.setCompSpecConc('ER_lumen', 'Ca', 150e-6) 
+		sim.setCompSpecClamped('cyt', 'Ca', 1)
+		#
+		for t in range(tpnt.size):
+			sim.run(tpnt[t])
+			o1 = sim.getPatchSpecCount('ER_memb', 'Oa')
+			o2 = sim.getPatchSpecCount('ER_memb', 'Ob')
+			o3 = sim.getPatchSpecCount('ER_memb', 'Oc')  
+			temp_res[j,t] = o1 + o2 + o3 
 
 	# calculate the mean and standard deviation of the simulation results   
 	temp = numpy.mean(temp_res[:,2001:]) # take only into account results after 20 s
-	res[i,0] = numpy.mean(temp, 0)
-    	res[i,1] = numpy.std(temp, 0)
+	res[i,0] = numpy.mean(temp)
+	res[i,1] = numpy.std(temp)
 
 
 # save the results (means and stds)
 numpy.savetxt('ip3r_fd_op_res.dat', res)
 numpy.savetxt('ip3r_fd_op_ca_concs.dat', ca_concs)
 
-print res[:,0]
+print(res[:,0])
 

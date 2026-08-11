@@ -21,7 +21,7 @@ r.initialize(26058)
 sim = ssolver.Wmdirect(model.mdl, model.cell, r)
 
 # Number of iterations (defines how many times the model is simulated)
-NITER = 1500
+NITER = 1  # 1500
 
 # timepoint array
 tpnt = numpy.arange(0.0, 40.01, 0.01)
@@ -34,38 +34,38 @@ res = numpy.zeros([ca_concs.size, 2])
 
 
 
-print 'Simulating the IP3R model of Doi et al. 2005.'
-print 'You can abort the simulation by pressing Ctrl + C'
+print('Simulating the IP3R model of Doi et al. 2005.')
+print('You can abort the simulation by pressing Ctrl + C')
 
-for i in xrange(ca_concs.size):
+for i in range(ca_concs.size):
 
-	print 'Round', i+1, '/', ca_concs.size
-	temp_res = numpy.zeros([NITER, tpnt.size]) # temporary storage for results
+	print('Round', i+1, '/', ca_concs.size)
+	temp_res = numpy.zeros([NITER, tpnt.size])  # temporary storage for results
 
-	for j in xrange(NITER): 
+	for j in range(NITER): 
    
-	        sim.reset()
-	        sim.setPatchCount('ER_memb', 'R', 1) # number of naive receptor
-	        sim.setCompConc('cyt', 'IP3', 10e-6) # [IP3] = 10 uM
-	        sim.setCompConc('cyt', 'Ca', ca_concs[i])
-	        sim.setCompClamped('cyt', 'Ca', 1) # Ca in cytosol is constant
-	        sim.setCompClamped('cyt', 'IP3', 1) # IP3 in cytosol is constant
-	    
-	        for t in xrange(tpnt.size):
-	            sim.run(tpnt[t]) # run the simulation
-	            temp_res[j,t] = sim.getPatchCount('ER_memb', 'Ropen')
+		sim.reset()
+		sim.setPatchSpecCount('ER_memb', 'R', 1)  # number of naive receptor
+		sim.setCompSpecConc('cyt', 'IP3', 10e-6)  # [IP3] = 10 uM
+		sim.setCompSpecConc('cyt', 'Ca', ca_concs[i])
+		sim.setCompSpecClamped('cyt', 'Ca', 1) # Ca in cytosol is constant
+		sim.setCompSpecClamped('cyt', 'IP3', 1) # IP3 in cytosol is constant
+		#
+		for t in range(tpnt.size):
+			sim.run(tpnt[t]) # run the simulation
+			temp_res[j,t] = sim.getPatchSpecCount('ER_memb', 'Ropen')
         
 	# calculate the mean and standard deviation of the simulation results      
-    	temp = numpy.mean(temp_res[:,2501:]) # take only into account results after 25 s
-    	res[i,0] = numpy.mean(temp, 0)
-    	res[i,1] = numpy.std(temp, 0)
+		temp = numpy.mean(temp_res[:,2501:]) # take only into account results after 25 s
+		res[i,0] = numpy.mean(temp)
+		res[i,1] = numpy.std(temp)
 
 
 # save the results (means and stds)
 numpy.savetxt('ip3r_doi_op_res.dat', res)
 numpy.savetxt('ip3r_doi_op_ca_concs.dat', ca_concs)
 
-print res[:,0]
+print(res[:,0])
 
 
 
