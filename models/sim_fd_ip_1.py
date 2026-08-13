@@ -4,11 +4,12 @@
 # Script to simulate open probability of IP3R
 # The model of Fraiman and Dawson 2004
 #
-# SUSTAINABLE
+# SUSTAINABLE	
 #
-# for different cytosolic Ca²⁺ concentrations 
-# and in fixed IP3 concentration [IP3] = 10 uM
-# in steady-state  
+# for different cytosolic IP3 concentrations 
+# and in fixed Ca²⁺ concentration [Ca²⁺] = 0.25 uM
+# in steady-state
+
 
 
 ####
@@ -22,10 +23,10 @@ import numpy
 ####
 
 
-# Ca2+ concentrations in cytosol
-ca_concs = numpy.array([0.001e-6, 0.003e-6, 0.007e-6, 0.01e-6, 0.013e-6, 0.03e-6, 0.10e-6, 0.13e-6,
+# IP3 concentrations in cytosol
+ip_concs = numpy.array([0.001e-6, 0.003e-6, 0.007e-6, 0.01e-6, 0.013e-6, 0.03e-6, 0.10e-6, 0.13e-6,
 						 0.20e-6, 0.27e-6, 0.28e-6, 0.30e-6, 0.33e-6, 0.4e-6, 0.50e-6, 0.6e-6, 0.7e-6,
-						 0.8e-6, 1.00e-6, 1.50e-6, 3.00e-6, 10.00e-6, 30.00e-6, 100.00e-6]) # mol/l
+						 0.8e-6, 1.00e-6, 1.50e-6, 3.00e-6, 10.00e-6, 30.00e-6, 100.00e-6, 500e-6, 1000e-6]) # mol/l
 
 # Solver settings
 r = srng.create('mt19937', 1000)
@@ -38,24 +39,24 @@ NITER = 750
 tpnt = numpy.arange(0.0, 30.01, 0.01)
 
 # array for simulation results
-res = numpy.zeros([ca_concs.size, 2])
+res = numpy.zeros([ip_concs.size, tpnt.size])
 
 print('Simulating the IP3R model of Fraiman and Dawson 2004.')
 
-for i in range(ca_concs.size):
+for i in range(ip_concs.size):
 
-	#print('Round', i+1, '/', ca_concs.size)
+	print('Round', i+1, '/', ip_concs.size)
 	temp_res = numpy.zeros([NITER, tpnt.size]) # temporary storage for results
 
 	for j in range(NITER): 
 		sim.reset()
 		sim.setPatchSpecCount('ER_memb', 'A00', 1) # number of naive receptor
-		sim.setCompSpecConc('cyt', 'IP3', 10e-6) # [IP3] = 10 uM
+		sim.setCompSpecConc('cyt', 'IP3', ip_concs[i])
 		sim.setCompSpecClamped('cyt', 'IP3', 1)
-		sim.setCompSpecConc('cyt', 'Ca', ca_concs[i])
+		sim.setCompSpecConc('cyt', 'Ca',0.25e-6)  # [Ca ²+] = 0.25 uM
 		sim.setCompSpecClamped('cyt', 'Ca', 1)
 		sim.setCompSpecConc('ER_lumen', 'Ca', 150e-6) 
-		sim.setCompSpecClamped('ER_lumen', 'Ca', 1)
+		sim.setCompSpecClamped('cyt', 'Ca', 1)
 		#
 		for t in range(tpnt.size):
 			sim.run(tpnt[t])
@@ -71,8 +72,7 @@ for i in range(ca_concs.size):
 
 
 # save the results (means and stds)
-numpy.savetxt('results/ip3r_fd_res_ca_1.dat', res)
-numpy.savetxt('results/ip3r_fd_ca_concs_1.dat', ca_concs)
+numpy.savetxt('results/ip3r_fd_res_ip_1.dat', res)
+numpy.savetxt('results/ip3r_fd_ip_concs_1.dat', ip_concs)
 
-print('sim_fd_ca_1 done')
-
+print('sim_fd_ip_1 done')
