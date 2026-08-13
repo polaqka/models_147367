@@ -5,11 +5,15 @@
 # The model of Fraiman and Dawson 2004
 #
 # 
+# for different cytosolic IP3 concentrations 
+# and in fixed Ca²⁺ concentration [Ca²⁺] = 0.25 uM
+# in steady-state
+
 
 
 ####
 
-import ip3r_model_fd_1 as model
+import ip3r_model_fd as model
 
 import steps.rng as srng
 import steps.solver as ssolver
@@ -61,14 +65,14 @@ for i in range(ip_concs.size):
 			temp_res[j,t] = o1 + o2 + o3 
 
 	# calculate the mean and standard deviation of the simulation results   
-	temp = numpy.mean(temp_res[:,2001:]) # take only into account results after 20 s
+	temp = numpy.mean(temp_res[:,2001:], axis = 1) # take only into account results after 20 s
 	res[i,0] = numpy.mean(temp)
 	res[i,1] = numpy.std(temp)
 
 
 # save the results (means and stds)
-numpy.savetxt('ip3r_fd_res_ip.dat', res)
-numpy.savetxt('ip3r_fd_ip_concs.dat', ip_concs)
+numpy.savetxt('results/ip3r_fd_res_ip.dat', res)
+numpy.savetxt('results/ip3r_fd_ip_concs.dat', ip_concs)
 
-print(res[:,0])
 
+print('sim_fd_ip done')

@@ -4,6 +4,10 @@
 # Script to simulate open probability of IP3R
 # The model of Doi et al. 2005
 #
+# for different cytosolic IP3 concentrations 
+# and in fixed Ca²⁺ concentration [Ca²⁺] = 0.25 uM
+# in steady-state
+
 
 ####
 
@@ -65,11 +69,10 @@ for i in range(ip_concs.size):
 
 
 # save the results (means and stds)
-numpy.savetxt('ip3r_doi_res_ip.dat', res)
-numpy.savetxt('ip3r_doi_ip_concs.dat', ip_concs)
+numpy.savetxt('results/ip3r_doi_res_ip.dat', res)
+numpy.savetxt('results/ip3r_doi_ip_concs.dat', ip_concs)
 
-print(res[:,0])
-
+print('sim_doi_ip done')
 
 
 

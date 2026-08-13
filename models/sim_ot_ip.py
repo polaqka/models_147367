@@ -3,6 +3,10 @@
 #
 # Script to simulate open probability of IP3R
 # Model of Othmer and Tang 1993
+#
+# for different cytosolic IP3 concentrations 
+# and in fixed Ca²⁺ concentration [Ca²⁺] = 0.25 uM
+# in steady-state
 
 
 
@@ -58,9 +62,8 @@ for i in range(ip_concs.size):
 	res[i,1] = numpy.std(temp)
 
 
-numpy.savetxt('ip3r_ot_res_ip.dat', res)
-numpy.savetxt('ip3r_ot_ip_concs.dat', ip_concs)
+numpy.savetxt('results/ip3r_ot_res_ip.dat', res)
+numpy.savetxt('results/ip3r_ot_ip_concs.dat', ip_concs)
 
-print(res[:,0])
-
+print('sim_ot_ip done')
 

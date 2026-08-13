@@ -4,7 +4,9 @@
 # Script to simulate open probability of IP3R
 # The model of Fraiman and Dawson 2004
 #
-# 
+# for different cytosolic Ca²⁺ concentrations 
+# and in fixed IP3 concentration [IP3] = 10 uM
+# in steady-state 
 
 
 ####
@@ -19,7 +21,10 @@ import numpy
 
 
 # Ca2+ concentrations in cytosol
-ca_concs = numpy.array([0.001e-6, 0.003e-6, 0.007e-6, 0.01e-6, 0.013e-6, 0.03e-6, 0.10e-6, 0.13e-6, 0.20e-6, 0.27e-6, 0.28e-6, 0.30e-6, 0.33e-6, 0.4e-6, 0.50e-6, 0.6e-6, 0.7e-6, 0.8e-6, 1.00e-6, 1.50e-6, 3.00e-6, 10.00e-6, 30.00e-6, 100.00e-6]) # mol/l
+ca_concs = numpy.array([0.001e-6, 0.003e-6, 0.007e-6, 0.01e-6, 0.013e-6, 
+						0.03e-6, 0.10e-6, 0.13e-6, 0.20e-6, 0.27e-6, 0.28e-6,
+						 0.30e-6, 0.33e-6, 0.4e-6, 0.50e-6, 0.6e-6, 0.7e-6, 0.8e-6, 
+						 1.00e-6, 1.50e-6, 3.00e-6, 10.00e-6, 30.00e-6, 100.00e-6]) # mol/l
 
 # Solver settings
 r = srng.create('mt19937', 1000)
@@ -32,13 +37,13 @@ NITER = 750
 tpnt = numpy.arange(0.0, 30.01, 0.01)
 
 # array for simulation results
-res = numpy.zeros([ca_concs.size, tpnt.size])
+res = numpy.zeros([ca_concs.size, 2])
 
 print('Simulating the IP3R model of Fraiman and Dawson 2004.')
 
 for i in range(ca_concs.size):
 
-	print('Round', i+1, '/', ca_concs.size)
+	#print('Round', i+1, '/', ca_concs.size)
 	temp_res = numpy.zeros([NITER, tpnt.size]) # temporary storage for results
 
 	for j in range(NITER): 
@@ -59,14 +64,15 @@ for i in range(ca_concs.size):
 			temp_res[j,t] = o1 + o2 + o3 
 
 	# calculate the mean and standard deviation of the simulation results   
-	temp = numpy.mean(temp_res[:,2001:]) # take only into account results after 20 s
+	temp = numpy.mean(temp_res[:,2001:], axis = 1 ) # take only into account results after 20 s
 	res[i,0] = numpy.mean(temp)
 	res[i,1] = numpy.std(temp)
 
 
 # save the results (means and stds)
-numpy.savetxt('ip3r_fd_op_res.dat', res)
-numpy.savetxt('ip3r_fd_op_ca_concs.dat', ca_concs)
+numpy.savetxt('results/ip3r_fd_res_ca.dat', res)
+numpy.savetxt('results/ip3r_fd_ca_concs.dat', ca_concs)
 
-print(res[:,0])
+
+print('sim_fd_ca done')
 
