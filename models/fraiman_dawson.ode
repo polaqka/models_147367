@@ -1,0 +1,56 @@
+#Fraiman and Dawson IP3R1 model -- units nM and ms
+init A00=10 ip3=10 Ca=70 CaER=57e3
+par wA00A01=5000e-6
+par wA01A00=0.001
+par wA00A10=6670e-6
+par wA10A00=1.17e-5
+par wA01A11=1540e-6
+par wA11A01=18e-3
+par wA10A11=500e-6
+par wA11A10=667e-3
+par wA01Pa=0.3e-3
+par wPaA01=700e-3
+par wPaPb=500e-3
+par wPbPa=100e-3
+par wPbPc=5000e-6
+par wPcPb=150e-3
+par wPcSa=3000e-3
+par wSaPc=250e-3
+par wSaSb=5000e-6
+par wSbSa=20e-3
+par wA11Oa=1800e-3
+par wOaA11=330e-3
+par wOaOb=133e-3
+par wObOa=1500e-3
+par wObOc=70e-6
+par wOcOb=2000e-3
+par wOcIa=630e-3
+par wIaOc=400e-3
+par wIaIb=60e-6
+par wIbIa=16e-3
+
+tot_IP3R=A00+A01+A10+A11+Pa+Pb+Pc+Sa+Sb+Oa+Ob+Oc+Ia+Ib
+tot_Ca=Ca+A01+Pa+Pb+Pc+Sa+2*Sb+A11+Oa+Ob+Oc+Ia+2*Ib
+tot_ip3=ip3+A10+A11+Oa+Ob+Oc+Ia+Ib
+tot_CaER=CaER+Oc+Ia+Ib+Pc+Sa+Sb
+dA00/dt=-wA00A01*A00*Ca+wA01A00*A01-wA00A10*ip3*A00+wA10A00*A10
+dA01/d=wA00A01*A00*Ca-wA01A00*A01-wA01A11*A01*ip3+wA11A01*A11-wA01Pa*A01+wPaA01*Pa
+dA10/dt=wA00A10*ip3*A00-wA10A00*A10-wA10A11*A10*Ca+wA11A10*A11
+dA11/dt=wA10A11*A10*Ca-wA11A10*A11+wA01A11*A01*ip3-wA11A01*A11-wA11Oa*A11+wOaA11*Oa
+dPa/dt=wA01Pa*A01-wPaA01*Pa-wPaPb*Pa+wPbPa*Pb
+dPb/dt=wPaPb*Pa-wPbPa*Pb-wPbPc*Pb*CaER+wPcPb*Pc
+dPc/dt=wPbPc*Pb*CaER-wPcPb*Pc-wPcSa*Pc+wSaPc*Sa
+dSa/dt=wPcSa*Pc-wSaPc*Sa-wSaSb*Sa*Ca+wSbSa*Sb
+dSb/dt=wSaSb*Sa*Ca-wSbSa*Sb
+
+dOa/dt=wA11Oa*A11-wOaA11*Oa-wOaOb*Oa+wObOa*Ob
+dOb/dt=wOaOb*Oa-wObOa*Ob-wObOc*CaER*Ob+wOcOb*Oc
+dOc/dt=wObOc*CaER*Ob-wOcOb*Oc-wOcIa*Oc+wIaOc*Ia
+dIa/dt=wOcIa*Oc-wIaOc*Ia-wIaIb*Ia*Ca+wIaIb*Ib
+dIb/dt=wIaIb*Ia*Ca-wIaIb*Ib
+
+dCa/dt=-wA00A01*A00*Ca+wA01A00*A01-wA10A11*A10*Ca+wA11A10*A11-wSaSb*Sa*Ca+wSbSa*Sb-wIaIb*Ia*Ca+wIaIb*Ib
+dip3/dt=-wA00A10*ip3*A00+wA10A00*A10-wA01A11*A01*ip3+wA11A01*A11
+dCaER/dt=-wPbPc*Pb*CaER+wPcPb*Pc-wObOc*CaER*Ob+wOcOb*Oc
+
+done
